@@ -1,3 +1,17 @@
+import {
+  AccountBox,
+  Dashboard,
+  DeliveryDining,
+  HealthAndSafety,
+  InsertChart,
+  Inventory,
+  Logout,
+  NotificationAdd,
+  Person2Outlined,
+  PsychologyAlt,
+  Settings,
+  Store,
+} from "@mui/icons-material";
 import "./Sidebar.scss";
 
 export const Sidebar = () => {
@@ -6,24 +20,67 @@ export const Sidebar = () => {
       <div className="top">
         <span className="logo">Borhan</span>
       </div>
+      <hr />
       <div className="center">
         <ul>
+          <p className="title">Main</p>
           <li>
+            <Dashboard className="icon" />
             <span>Dashboard</span>
           </li>
+          <p className="title">Lists</p>
           <li>
-            <span>Dashboard</span>
+            <Person2Outlined className="icon" />
+            <span>Users</span>
           </li>
           <li>
-            <span>Dashboard</span>
+            <Store className="icon" />
+            <span>Products</span>
           </li>
           <li>
-            <span>Dashboard</span>
+            <Inventory className="icon" />
+            <span>Orders</span>
+          </li>
+          <li>
+            <DeliveryDining className="icon" />
+            <span>Delivery</span>
+          </li>
+          <p className="title">Useful</p>
+          <li>
+            <InsertChart className="icon" />
+            <span>Statistics</span>
+          </li>
+          <li>
+            <NotificationAdd className="icon" />
+            <span>Notifications</span>
+          </li>
+          <p className="title">Service</p>
+          <li>
+            <HealthAndSafety className="icon" />
+            <span>System Health</span>
+          </li>
+          <li>
+            <PsychologyAlt className="icon" />
+            <span>Logs</span>
+          </li>
+          <li>
+            <Settings className="icon" />
+            <span>Setting</span>
+          </li>
+          <p className="title">User</p>
+          <li>
+            <AccountBox className="icon" />
+            <span>Profile</span>
+          </li>
+          <li>
+            <Logout className="icon" />
+            <span>Logout</span>
           </li>
         </ul>
       </div>
       <div className="bottom">
-        <span className="color">Color options</span>
+        <div className="colorOption"></div>
+        <div className="colorOption"></div>
       </div>
     </div>
   );
